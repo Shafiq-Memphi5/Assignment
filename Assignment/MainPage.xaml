@@ -1,0 +1,92 @@
+﻿<Page
+    x:Class="Assignment.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assignment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#717277">
+        <TextBlock Text="USER REGISTRATION"
+                   Margin="0,30,0,0"
+                   HorizontalAlignment="Center"
+                   FontSize="40"
+                   Foreground="white"
+                   
+        />
+        <StackPanel Margin="30,60,30,30"
+                            
+                    >
+            <TextBox Background="white"
+                     BorderBrush="Gray"
+                     Foreground="Black"
+                     PlaceholderText="Name"
+                     PlaceholderForeground="#717277"
+                     x:Name="txtName"
+                     FontStyle="Normal"
+                     FontSize="25"
+                     Margin="200,60,200,0"
+                     CornerRadius="20"
+            />
+            <TextBox Background="white"
+                     BorderBrush="Gray"
+                     Foreground="Black"
+                     PlaceholderText="Email"
+                     PlaceholderForeground="#717277"
+                     x:Name="txtEmail"
+                     FontStyle="Normal"    
+                     FontSize="25"
+                     Margin="200,30,200,0"
+                     CornerRadius="20"
+            />
+            <TextBox Background="white"
+                     BorderBrush="Gray"
+                     Foreground="Black"
+                     PlaceholderText="Password"
+                     PlaceholderForeground="#717277"
+                     x:Name="txtPw1"
+                     FontStyle="Normal"    
+                     FontSize="25"
+                     Margin="200,30,200,0" 
+                     CornerRadius="20"
+            />
+            <TextBox Background="white"
+                     BorderBrush="Gray"
+                     Foreground="Black"
+                     PlaceholderText="Confirm Password"
+                     PlaceholderForeground="#717277"
+                     x:Name="txtPw2"
+                     FontStyle="Normal"    
+                     FontSize="25"
+                     Margin="200,30,200,0"
+                     CornerRadius="20"
+            />
+            
+
+        </StackPanel>
+        <StackPanel Background="Transparent"
+                    Margin="30, 400, 30, 30"
+            >
+            <Button FontSize="35"
+                    x:Name="regBtn"
+                    Margin="200,30,200,0"
+                    Content="Register"
+                    Background="Black"
+                    Foreground="White"
+                    Click="btn_Reg"
+                    CornerRadius="20"
+            />
+            <Button FontSize="35"
+                    x:Name="clrBtn"
+                    Margin="200,30,200,0"
+                    Content="Clear"
+                    Background="Black"
+                    Foreground="White"
+                    Click="btn_Clear"
+                    CornerRadius="20"
+            />
+        </StackPanel>
+    </Grid>
+</Page>
